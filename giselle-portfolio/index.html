@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giselle vdH | Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Giselle van den Heever, first-year Software Development student in Port Elizabeth.">
+  <!-- Google Fonts (if they fail to load, the fallback fonts in style.css are used) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- NAVIGATION: edit links here -->
+<header class="nav">
+  <a class="nav__logo" href="#home">Giselle</a>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" class="nav__links" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+    <a href="#side-projects">Side Projects</a><a href="projects.html">View My Work</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. HERO: staggered entrance animation (see .hero in style.css) -->
+<section class="hero" id="home">
+  <img class="hero__flower" src="images/decor/orchid.jpg" alt="" aria-hidden="true">
+  <p class="hero__kicker">Software Developer</p>
+  <h1 class="hero__title">Portfolio</h1>
+  <p class="hero__name">Giselle vdH</p>
+  <p class="hero__place">Port Elizabeth, South Africa</p>
+  <a class="btn" href="projects.html">View My Work</a>
+  <a class="hero__scroll" href="#about" aria-label="Scroll to About">scroll</a>
+</section>
+
+<!-- 2. ABOUT -->
+<section class="section about reveal" id="about">
+  <div class="about__text">
+    <h2 class="script-heading">About Me</h2>
+    <p>Hi there! I'm Giselle van den Heever.</p>
+    <p>I'm a first-year Software Development student at CTU in Gqeberha, South Africa. I'm passionate about understanding how technology works, exploring programming languages, and developing my skills in frontend and backend development. I enjoy learning through practical projects and experimenting with new tools.</p>
+    <p>Outside of coding, I enjoy traditional and digital art, which allows me to combine creativity with my technical interests. I approach problems with curiosity, breaking them into manageable steps and exploring different solutions.  </p>
+    <!-- EDIT: replace each placeholder paragraph with your own words -->
+    <p>I've been working as a waitress at Mugg & Bean since 2024, where I've developed my communication, teamwork, and problem-solving skills while building confidence in working with people. I've also gained workplace experience through work shadowing at Imbali Consumables and Services. My upcoming work shadowing at Wings Discovery will involve developing an educational application to help disadvantaged students learn.</p>
+    <p>I'm currently developing I WASN'T THERE, a narrative-driven game using Ren'Py and Python. This project combines my interests in storytelling, character development, visual design, and programming while helping me explore game logic and interactive experiences. I also enjoy experimenting with HTML, CSS, and JavaScript to build and customise websites.</p>
+    <p>My goal is to become a well-rounded developer with a strong understanding of programming fundamentals. I'm particularly interested in game development and cybersecurity, and I'm eager to keep expanding my skills through practical experience, personal projects, and continuous learning.</p>
+    <p class="about__invitation">Take a look at what I've created!</p>
+    <a class="btn" href="projects.html">View My Work</a>
+  </div>
+  <!-- EDIT: put your photo at images/profile/giselle.jpg -->
+  <figure class="about__photo">
+    <img src="images/profile/giselle.jpeg" alt="Portrait of Giselle" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-placeholder',textContent:'Your photo goes here (images/profile/giselle.jpg)'}))">
+  </figure>
+</section>
+
+<!-- 3. SKILLS (icons are generated from the "tools" list in js/script.js) -->
+<section class="section reveal" id="skills">
+  <h2 class="script-heading">Skills &amp; Certifications</h2>
+  <ul class="legend"><li class="tag tag--learning">Currently studying</li><li class="tag tag--using">Tools I use</li></ul>
+  <div class="tools" id="tools"></div>
+
+  <h3 class="sub">Currently Learning</h3>
+  <p class="learning">Python <span>&middot;</span> JavaScript <span>&middot;</span> HTML <span>&middot;</span> CSS <span>&middot;</span> AWS</p>
+
+  <h3 class="sub">Certifications</h3>
+  <!-- EDIT: add real certificates only. Copy one <figure> per certificate. -->
+  <div class="certs">
+    <figure class="cert">
+      <img src="images/certificates/cert-1.jpeg" alt="AI Foundation certificate">
+      <figcaption>AI Foundation Certificate</figcaption>
+    </figure>
+    <figure class="cert">
+      <div class="img-placeholder">Currently studying for my Python and AWS certifications.</div>
+      <figcaption>Certifications in progress</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4. SIDE PROJECTS (cards generated from "sideProjects" in js/script.js) -->
+<section class="section reveal" id="side-projects">
+  <h2 class="script-heading">Side Projects</h2>
+  <div id="side-list"></div>
+</section>
+
+<!-- 5. CONTACT -->
+<section class="section contact reveal" id="contact">
+  <h2 class="script-heading">Get in Touch</h2>
+  <p>I'm always interested in learning, creating, and connecting with others who share an interest in technology. Feel free to reach out!</p>
+  <ul class="contact__list">
+    <li>Email: giselleisgood@gmail.com</li>
+    <li>Instagram: @mr.sleeqy</li>
+    <li>GitHub: <a href="https://github.com/giselle-vdh" target="_blank" rel="noopener">github.com/giselle-vdh</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="footer">
+  <span>&copy; <span id="year">2026</span> Giselle vdH</span>
+  <a href="#home">Back to top</a>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
